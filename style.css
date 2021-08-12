@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background: url(yola.JPG) no-repeat;
+  background-size: cover;
+}
+
+.menu-bar {
+  background: rgb(0,100,0);
+  text-align: center;
+}
+
+.menu-bar ul{
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+
+.menu-bar ul li{
+  width: 130px;
+  margin: 10px 5px;
+  padding: 15px;
+}
+
+.menu-bar ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.active, .menu-bar ul li:hover{
+  background: #2bab0d;
+  border-radius: 3px;
+}
+
+.menu-bar .fab,
+.menu-bar .fas{
+  margin-right: 8px;
+}
+
+.subMenu1{
+  display: none;
+}
+
+.menu-bar ul li:hover .subMenu1{
+  display: block;
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 15px;
+  background: rgb(0,100,0);
+}
+
+.menu-bar ul li:hover .subMenu1 ul{
+  display: block;
+  margin: 10px 20px;
+}
+
+.menu-bar ul li:hover .subMenu1 ul li{
+  text-align: left;
+  border-bottom: 1px dotted #fff;
+  border-radius: 0;
+  background: transparent;
+  padding: 10px 10px;
+  width: 130px;
+}
+
+.menu-bar ul li:hover .subMenu1 ul li:last-child{
+  border-bottom: none;
+}
+
+.menu-bar ul li:hover .subMenu1 ul li a:hover{
+  color: #b2ff00;
+}
+
+.fa-angle-right{
+  float: right;
+  padding-top: 5px;
+}
+
+.subMenu2{
+  display: none;
+}
+
+.hoverMe:hover .subMenu2{
+  display: block;
+  position: absolute;
+  margin-top: -45px;
+  margin-left: 140px;
+  background: rgb(0,100,0);
+}
